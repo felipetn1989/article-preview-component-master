@@ -107,28 +107,32 @@ body {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.301);
-  transition: ease .2s;
 }
 
-.text {
-  padding: 2rem 2rem 1rem 2rem;
-}
+/* .text {
+  padding: 2rem 2rem 1rem 2rem
+} */
 
 .text > h1 {
   font-size: 1rem;
   color: var(--Very-Dark-Grayish-Blue);
   margin-bottom: 1rem;
+  padding: 2rem 2.5rem 0 2.5rem;
 }
 
 .text > p {
   font-weight: var(--fw-bold);
   margin-bottom: 1.5rem;
+  padding: 0 2.5rem 1rem 2.5rem;
 }
 
 .author_share {
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
 .author_picture {
@@ -163,6 +167,45 @@ body {
 
 #share img {
   margin: auto;
+}
+
+#share_clicked {
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--Grayish-Blue);
+}
+
+#share_clicked img {
+  margin: auto;
+  color: white;
+}
+
+#click {
+  background-color: var(--Very-Dark-Grayish-Blue);
+  text-transform: uppercase;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 0 2.75rem 0rem 2.75rem;
+  display: none;
+}
+
+#share:hover,
+#share_clicked:hover {
+  cursor: pointer;
+}
+
+.social_icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .attribution {
