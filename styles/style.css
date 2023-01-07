@@ -226,7 +226,7 @@ body {
 @media screen and (min-width: 1200px) {
   .card_preview {
     display: flex;
-    width: 45vw;
+    width: 55vw;
     max-width: 100vw;
     height: fit-content;
     overflow: unset;
