@@ -6,6 +6,10 @@ function overlay() {
   click.style.display = "flex";
   share.style.backgroundColor = "var(--Grayish-Blue)";
   button_icon.setAttribute("src", "images/icon-share-white.png");
+
+  if (window.innerWidth > 1200) {
+    click.removeChild(share_clicked);
+  }
 }
 
 share_clicked.addEventListener("click", reclick);
