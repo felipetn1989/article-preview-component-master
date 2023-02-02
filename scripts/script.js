@@ -1,15 +1,12 @@
-let button_icon = document.querySelector(".button_icon");
+let buttonIcon = document.querySelector(".button_icon");
 
-share.addEventListener("click", overlay);
+/* Everytime the user clicks on the Share button, it calls the function overlay. The function then toggles the appropriate CSS classes on and off. At the end, the function checks if the overlay is being displayed and changes the image of button accordinly */
 
-function overlay() {
-  if (click.style.display == 'none') {
-    click.style.display = "flex";
-    share.style.backgroundColor = "var(--Grayish-Blue)";
-    button_icon.setAttribute("src", "images/icon-share-white.png");
-  } else {
-    click.style.display = "none";
-    share.style.backgroundColor = "var(--Light-Grayish-Blue)";
-    button_icon.setAttribute("src", "images/icon-share.svg");
-  }
-}
+share.addEventListener("click", () => {
+  click.classList.toggle("display_flex");
+  share.classList.toggle("color");
+
+  buttonIcon.src = click.classList.contains("display_flex")
+    ? "images/icon-share-white.png"
+    : "images/icon-share.svg";
+});

@@ -162,7 +162,7 @@ body {
   font-weight: var(--fw-bold);
 }
 
-#share {
+.button_overlay {
   border: none;
   border-radius: 50%;
   width: 2rem;
@@ -176,7 +176,7 @@ body {
   margin: auto;
 }
 
-#click {
+.menu_overlay {
   background-color: var(--Very-Dark-Grayish-Blue);
   text-transform: uppercase;
   position: absolute;
@@ -261,12 +261,12 @@ body {
     padding: unset;
   }
 
-  #share {
+  .button_overlay {
     transform: translateX(0.0625rem);
   }
 
-  #click {
-    display: block;
+  .menu_overlay {
+    display: none;
     width: 15rem;
     height: 3rem;
     border-radius: 0.75rem;
@@ -301,4 +301,18 @@ body {
     top: 100%;
     left: 51%;
   }
+}
+
+/* Classes for JavaScript */
+
+.display_flex {
+  display: flex;
+}
+
+.display_block {
+  display: block;
+}
+
+.color {
+  background-color: var(--Grayish-Blue);
 }
